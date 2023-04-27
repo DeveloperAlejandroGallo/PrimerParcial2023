@@ -1,0 +1,12 @@
+<h4 class="d-flex justify-content-between align-items-center mb-3">
+  <span class="text-muted text-bg-dark">Detalle Película</span>
+</h4>
+<div class="card" style="width: 18rem; height: 20rem">
+    <div class="card-body">
+      <h4 class="card-title">{{detalle_peliSeleccionadaInput?.Titulo}}</h4>
+      <img [src]="detalle_peliSeleccionadaInput?.fotoPelicula" width="150px" height="130px" class="mx-auto d-block" alt="...">
+      <h5 class="card-text mb-2 text-muted">Género: {{getGenero(detalle_peliSeleccionadaInput!.Genero)}}</h5>
+      <h5 class="card-text mb-2 text-muted">Fecha Estreno: {{detalle_peliSeleccionadaInput?.fechaEstreno | date:"dd/MM/yyyy"}}</h5>
+      <h5 class="card-text mb-2 text-muted">Publico: {{detalle_peliSeleccionadaInput?.cantidadPublico}}</h5>
+    </div>
+  </div>

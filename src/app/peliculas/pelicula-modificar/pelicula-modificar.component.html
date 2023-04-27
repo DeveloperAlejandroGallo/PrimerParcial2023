@@ -1,0 +1,12 @@
+<h4 class="d-flex justify-content-between align-items-center mb-3">
+  <span class="text-muted text-bg-dark">Modificar Película</span>
+</h4>
+<div class="card" style="width: 18rem; height: 20rem">
+    <div class="card-body">
+      <h4 class="card-title">{{modificar_peliSeleccionadaInput?.Titulo}} </h4>
+      <img [src]="modificar_peliSeleccionadaInput?.fotoPelicula" width="150px" height="130px" class="mx-auto d-block" alt="...">
+      <h5 class="card-text mb-2 text-muted">Género: {{getGenero(modificar_peliSeleccionadaInput!.Genero)}}</h5>
+      <h5 class="card-text mb-2 text-muted">Fecha Estreno: {{modificar_peliSeleccionadaInput?.fechaEstreno | date:"dd/MM/yyyy"}}</h5>
+      <h5 class="card-text mb-2 text-muted">Publico: {{modificar_peliSeleccionadaInput?.cantidadPublico}}</h5>
+    </div>
+  </div>
